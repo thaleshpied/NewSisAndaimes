@@ -44,6 +44,21 @@ class Estoque_model extends CI_Model
 		else{
 			return false;
 		}
-	}    
+	}  
+    
+     /* Retorna total de produtos cadastrados */
+    function cont_all_estoque(){
+        return $this->db->count_all('sis_equipamentos');
+    }
+
+    /* Retorna total de areas cadastradas */
+    function cont_all_areas(){
+        return $this->db->count_all('sis_area');
+    }
+
+    /* Retorna total de montadores cadastrados */
+    function cont_all_montadores(){
+        return $this->db->count_all('sis_equipe');
+    }
 
 }

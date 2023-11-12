@@ -28,21 +28,25 @@ class Pagina extends CI_Controller {
 
 		} else {
 			$dados['title'] = "Sis Andaimes";
+
+			$estoquetotal = $this->Estoque_model->cont_all_estoque();
+			$dados['estoquetotal'] = $estoquetotal;
+
+			$areascadastradas = $this->Estoque_model->cont_all_areas();
+			$dados['areascadastradas'] = $areascadastradas;
+
+			$montadores = $this->Estoque_model->cont_all_montadores();
+			$dados['montadores'] = $montadores;
+
 			$this->load->view('components/head.php', $dados);
 			$this->load->view('components/nav.php', $dados);
 			$this->load->view('index.php', $dados);
 
 		}
-
-
-
 	}
 
-	/*
-	 Logando usuario
-	 Verificando se o usuario esta cadastrado, caso esteja cadastrado o login é realizado salvando os dados da sessão
-	*/
-	
+	/* Logando usuario
+	 Verificando se o usuario esta cadastrado, caso esteja cadastrado o login é realizado salvando os dados da sessão */
 	 public function login()
 	{
 
@@ -78,6 +82,7 @@ class Pagina extends CI_Controller {
 		}
 	}
 
+	/* Deslogando Usuário */
 	public function logout()
 	{
 		$this->session->sess_destroy();

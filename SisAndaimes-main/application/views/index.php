@@ -201,7 +201,7 @@
                   <i class="fa fa-cogs fa-2x"></i>
                 </div>
                 <h6 class="text-uppercase">Total de Equipamentos</h6>
-                <h1 class="display-1">134</h1>
+                <h1 class="display-1"><?php echo $estoquetotal ?></h1>
               </div>
             </div>
           </div>
@@ -212,7 +212,7 @@
                   <i class="fa fa-steam fa-2x"></i>
                 </div>
                 <h6 class="text-uppercase">Andaimes Montados</h6>
-                <h1 class="display-1">87</h1>
+                <h1 class="display-1">?????</h1>
               </div>
             </div>
           </div>
@@ -223,7 +223,7 @@
                   <i class="fa fa-users fa-2x"></i>
                 </div>
                 <h6 class="text-uppercase">Montadores</h6>
-                <h1 class="display-1">125</h1>
+                <h1 class="display-1"><?php echo $montadores ?></h1>
               </div>
             </div>
           </div>
@@ -234,7 +234,7 @@
                   <i class="fa fa-connectdevelop fa-2x"></i>
                 </div>
                 <h6 class="text-uppercase">Áreas</h6>
-                <h1 class="display-1">36</h1>
+                <h1 class="display-1"><?php echo $areascadastradas ?></h1>
               </div>
             </div>
           </div>
