@@ -7,6 +7,14 @@ body {
 	font:600 16px/18px 'Open Sans',sans-serif;
 }
 
+/*DASHBOARD*/
+.display-1 {
+    font-size: 2rem !important;
+    font-weight: 300 !important;
+    line-height: 1.1 !important;
+}
+
+
 #bodyauxiliar{
 	margin: 0;
 	overflow: hidden;
@@ -352,7 +360,7 @@ a{color:inherit;text-decoration:none}
 	position: absolute !important;
 	right: 15px !important;
 	top: 15px !important;
-	transform: rotate(45deg) !important;
+	/*transform: rotate(45deg) !important;*/
   }
   
   .card i {
@@ -492,7 +500,7 @@ a{color:inherit;text-decoration:none}
 
 .attribute-label {
     font-weight: bold;
-    color: #ff9900; /* Laranja */
+    color: #ff9900 !important; /* Laranja */
 }
 
 .attribute-value {

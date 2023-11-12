@@ -141,26 +141,32 @@
             </li>
             <li class="nav-item nav-profile dropdown">
               <a class="nav-link dropdown-toggle  pl-0 pr-0" href="application/#" data-toggle="dropdown" id="profileDropdown">
-                <i class="typcn typcn-user-outline mr-0"></i>
-                <span class="nav-profile-name">Usuário</span>
+                <i class="typcn typcn-user-outline mr-0 attribute-label"></i>
+                <span class="nav-profile-name">Thales</span>
               </a>
               <form class="form-signin" id="form-logout" name="form-logout" role="form" method="post" action="<?php echo base_url('Pagina/logout'); ?>">
 						
 					</form>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
                 <a class="dropdown-item">
-                <i class="typcn typcn-cog text-primary"></i>
+                <i class="typcn typcn-cog attribute-label"></i>
                 Configurações
                 </a>
                 <a class="dropdown-item">
-                <i class="typcn typcn-power text-primary"></i>
+                <i class="typcn typcn-power attribute-label"></i>
                 Logout
                 </a>
-                <fieldset>
-							<button class="btn pull-right" id="btnDeslogar" name="btnDeslogar" type="submit" value="Register" name="register">
-								<i class="typcn typcn-arrow-forward-outline mr-2"></i> <label> Sair </label>
-							</button>
-						</fieldset>
+                
+
+                <form class="dropdown-item typcn typcn-power attribute-label" id="form-logout" name="form-logout" role="form" method="post" action="<?php echo base_url('Pagina/logout'); ?>">
+                    <fieldset>
+                        <hr>
+                        <button class="btn pull-right" id="btnDeslogar" name="btnDeslogar" type="submit" value="Register" name="register">
+                            <i class="fas fa-times"></i> <label> Sair </label>
+                        </button>
+                    </fieldset>
+                </form>
+                
               </div>
             </li>
           </ul>

@@ -198,7 +198,7 @@
             <div class="card card-inverse card-success">
               <div class="card-block bg-success">
                 <div class="rotate">
-                  <i class="fa fa-user fa-2x"></i>
+                  <i class="fa fa-cogs fa-2x"></i>
                 </div>
                 <h6 class="text-uppercase">Total de Equipamentos</h6>
                 <h1 class="display-1">134</h1>
@@ -209,7 +209,7 @@
             <div class="card card-inverse card-danger">
               <div class="card-block bg-danger">
                 <div class="rotate">
-                  <i class="fa fa-list fa-2x"></i>
+                  <i class="fa fa-steam fa-2x"></i>
                 </div>
                 <h6 class="text-uppercase">Andaimes Montados</h6>
                 <h1 class="display-1">87</h1>
@@ -220,7 +220,7 @@
             <div class="card card-inverse card-info">
               <div class="card-block bg-info">
                 <div class="rotate">
-                  <i class="fa fa-share fa-2x"></i>
+                  <i class="fa fa-users fa-2x"></i>
                 </div>
                 <h6 class="text-uppercase">Montadores</h6>
                 <h1 class="display-1">125</h1>
@@ -231,7 +231,7 @@
             <div class="card card-inverse card-warning">
               <div class="card-block bg-warning">
                 <div class="rotate">
-                  <i class="fa fa-share fa-2x"></i>
+                  <i class="fa fa-connectdevelop fa-2x"></i>
                 </div>
                 <h6 class="text-uppercase">Áreas</h6>
                 <h1 class="display-1">36</h1>
@@ -246,7 +246,7 @@
     <!-- <h3 class="mb-0 font-weight-bold mt-4">Gráficos e Relatórios</mt-4> -->
 
 
-<div class="main-panel">
+<div class="mt-5">
           <div class="row">
             <div class="col-6 grid-margin stretch-card">
               <div class="card">
