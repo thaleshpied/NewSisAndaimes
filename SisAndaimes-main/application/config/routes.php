@@ -53,6 +53,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 //DEFAUT CONTROLLER
 $route['default_controller'] = 'Pagina/index';
 
+
+//ADMINISTRAÇÃO DE ANDAIMES
+$route['Administracao'] = 'Admin/index';
+
+
 //RODAS DO FRAMEWORK 
 $route['404_override'] = ''; //ROTA PARA PÁGINA DE ERRO
 $route['translate_uri_dashes'] = FALSE;

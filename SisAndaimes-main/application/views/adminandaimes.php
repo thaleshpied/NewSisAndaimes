@@ -296,7 +296,7 @@
             </div>-->
           </li>
           <li class="nav-item">
-            <a class="nav-link"  href="Administracao" aria-expanded="false" aria-controls="tables">
+            <a class="nav-link"  href="administracao" aria-expanded="false" aria-controls="tables">
               <i class="typcn typcn-th-small-outline menu-icon"></i>
               <span class="menu-title">Administração</span>
             </a><!--
@@ -439,70 +439,127 @@
 
 
 <div class="main-panel">
-          <div class="row">
-            <div class="col-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Total de Andaimes</h4>
-                  <canvas id="lineChart"></canvas>
-                </div>
-              </div>
+          
+
+
+        
+
+
+<div class="product-carousel">
+        <div class="product">
+            <img src="produto1.jpg" alt="Produto 1">
+            <h2>Produto 1</h2>
+            <ul class="product-attributes">
+                <li><span class="attribute-label">Código:</span> <span class="attribute-value">Seu Código Aqui</span></li>
+                <li><span class="attribute-label">Descrição:</span> <span class="attribute-value">Sua Descrição Aqui</span></li>
+                <!-- Adicione os outros atributos aqui -->
+            </ul>
+            <div class="product-actions">
+                <span class="action-icon">Editar</span>
+                <span class="action-icon">Excluir</span>
+                <span class="action-icon">Informação</span>
             </div>
-            <div class="col-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Contagem de andaimes</h4>
-                  <canvas id="barChart"></canvas>
-                </div>
-              </div>
+        </div>
+
+        <div class="product">
+            <img src="produto2.jpg" alt="Produto 2">
+            <h2>Produto 2</h2>
+            <ul class="product-attributes">
+                <li><span class="attribute-label">Código:</span> <span class="attribute-value">Outro Código Aqui</span></li>
+                <li><span class="attribute-label">Descrição:</span> <span class="attribute-value">Outra Descrição Aqui</span></li>
+                <!-- Adicione os outros atributos aqui -->
+            </ul>
+            <div class="product-actions">
+                <span class="action-icon">Editar</span>
+                <span class="action-icon">Excluir</span>
+                <span class="action-icon">Informação</span>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Produtividade Geral</h4>
-                  <canvas id="areaChart"></canvas>
-                </div>
-              </div>
+        </div>
+
+
+        <div class="product">
+            <img src="produto2.jpg" alt="Produto 2">
+            <h2>Produto 2</h2>
+            <ul class="product-attributes">
+                <li><span class="attribute-label">Código:</span> <span class="attribute-value">Outro Código Aqui</span></li>
+                <li><span class="attribute-label">Descrição:</span> <span class="attribute-value">Outra Descrição Aqui</span></li>
+                <!-- Adicione os outros atributos aqui -->
+            </ul>
+            <div class="product-actions">
+                <span class="action-icon">Editar</span>
+                <span class="action-icon">Excluir</span>
+                <span class="action-icon">Informação</span>
             </div>
-            <div class="col-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Produtividade Mensal</h4>
-                  <canvas id="doughnutChart"></canvas>
-                </div>
-              </div>
+        </div>
+
+        <div class="product">
+            <img src="produto2.jpg" alt="Produto 2">
+            <h2>Produto 2</h2>
+            <ul class="product-attributes">
+                <li><span class="attribute-label">Código:</span> <span class="attribute-value">Outro Código Aqui</span></li>
+                <li><span class="attribute-label">Descrição:</span> <span class="attribute-value">Outra Descrição Aqui</span></li>
+                <!-- Adicione os outros atributos aqui -->
+            </ul>
+            <div class="product-actions">
+                <span class="action-icon">Editar</span>
+                <span class="action-icon">Excluir</span>
+                <span class="action-icon">Informação</span>
             </div>
-          </div>
-         
-       
-      
+        </div>
+
+        <div class="product">
+            <img src="produto2.jpg" alt="Produto 2">
+            <h2>Produto 2</h2>
+            <ul class="product-attributes">
+                <li><span class="attribute-label">Código:</span> <span class="attribute-value">Outro Código Aqui</span></li>
+                <li><span class="attribute-label">Descrição:</span> <span class="attribute-value">Outra Descrição Aqui</span></li>
+                <!-- Adicione os outros atributos aqui -->
+            </ul>
+            <div class="product-actions">
+                <span class="action-icon">Editar</span>
+                <span class="action-icon">Excluir</span>
+                <span class="action-icon">Informação</span>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="produto2.jpg" alt="Produto 2">
+            <h2>Produto 2</h2>
+            <ul class="product-attributes">
+                <li><span class="attribute-label">Código:</span> <span class="attribute-value">Outro Código Aqui</span></li>
+                <li><span class="attribute-label">Descrição:</span> <span class="attribute-value">Outra Descrição Aqui</span></li>
+                <!-- Adicione os outros atributos aqui -->
+            </ul>
+            <div class="product-actions">
+                <span class="action-icon">Editar</span>
+                <span class="action-icon">Excluir</span>
+                <span class="action-icon">Informação</span>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="produto2.jpg" alt="Produto 2">
+            <h2>Produto 2</h2>
+            <ul class="product-attributes">
+                <li><span class="attribute-label">Código:</span> <span class="attribute-value">Outro Código Aqui</span></li>
+                <li><span class="attribute-label">Descrição:</span> <span class="attribute-value">Outra Descrição Aqui</span></li>
+                <!-- Adicione os outros atributos aqui -->
+            </ul>
+            <div class="product-actions">
+                <span class="action-icon">Editar</span>
+                <span class="action-icon">Excluir</span>
+                <span class="action-icon">Informação</span>
+            </div>
+        </div>
+        <!-- Adicione mais produtos conforme necessário -->
+
+    </div>
 
 
 
-
-
-
-
-                    </div>
-                  </div>
-                </div>
-              </div>
              
               
-
-          <!-- content-wrapper ends -->
-          <!-- partial:partials/_footer.html -->
-          <footer class="footer">
-           
-
-          </footer>
-          <!-- partial -->
-        </div>
-        <!-- main-panel ends -->
-      </div>
-      <!-- page-body-wrapper ends -->
+         
     </div>
     <!-- container-scroller -->
     <!-- base:js -->

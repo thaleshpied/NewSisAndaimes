@@ -434,3 +434,79 @@ a{color:inherit;text-decoration:none}
     margin-left: 255px !important;
 }
 
+/*administração de andaimes*/
+
+/* Estilo da barra de rolagem - oculta para navegadores que suportam a propriedade WebKit (Chrome, Safari, etc.) */
+.product-carousel::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.product-carousel::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
+/* Adicione este estilo para permitir rolar horizontalmente */
+.product-carousel {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent; /* Barra de rolagem transparente */
+    -webkit-overflow-scrolling: touch; /* Suporte ao estilo de rolagem do iOS */
+}
+
+.product {
+    width: 200px; /* Largura desejada para cada produto */
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-shrink: 0; /* Evita a redução de tamanho */
+    cursor: grab; /* Cursor de mão para indicar que é possível arrastar */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para a animação */
+}
+
+/* Adiciona um efeito visual durante o clique/drag do produto */
+.product:active {
+    cursor: grabbing;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.product h2 {
+    padding: 10px;
+    margin: 0;
+    color: #333;
+}
+
+.product-attributes {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.attribute-label {
+    font-weight: bold;
+    color: #ff9900; /* Laranja */
+}
+
+.attribute-value {
+    color: #33cc33; /* Verde */
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.action-icon {
+    cursor: pointer;
+    color: #333;
+}
