@@ -404,22 +404,7 @@ a{color:inherit;text-decoration:none}
 }
 
 .sidebar {
-	min-height: calc(100vh - 64px);
     background: #1b4025 !important;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    padding: 0;
-    width: 255px;
-    z-index: 11;
-    transition: width 0.25s ease, background 0.25s ease;
-    -webkit-transition: width 0.25s ease, background 0.25s ease;
-    -moz-transition: width 0.25s ease, background 0.25s ease;
-    -ms-transition: width 0.25s ease, background 0.25s ease;
-    box-shadow: 6px 16px 31px -18px #b7bcd1;
-    -webkit-box-shadow: 6px 16px 31px -18px #b7bcd1;
-    -moz-box-shadow: 6px 16px 31px -18px #b7bcd1;
-    -ms-box-shadow: 6px 16px 31px -18px #b7bcd1;
-	position:fixed;
 }
 .sidebar .nav .nav-item.active > .nav-link i {
     color: #f38834 !important;
@@ -439,7 +424,6 @@ a{color:inherit;text-decoration:none}
     width: 100%;
     -webkit-flex-grow: 1;
     flex-grow: 1;
-    margin-left: 255px !important;
 }
 
 /*administração de andaimes*/
