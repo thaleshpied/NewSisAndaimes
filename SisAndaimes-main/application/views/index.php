@@ -1,165 +1,6 @@
 
 
-      <!-- partial -->
-      <div class="page-body-wrapper">
-        <!-- partial:partials/_settings-panel.html -->
-        <div class="theme-setting-wrapper">
-          <!--BOTAO DE CONFIGURAÇÃO DE TEMA--><div id="settings-trigger" style="display:none"><i class="typcn typcn-cog-outline"></i></div>
-          <div id="theme-settings" class="settings-panel">
-            <i class="settings-close typcn typcn-delete-outline"></i>
-            <p class="settings-heading">Tema</p>
-            <div class="sidebar-bg-options selected" id="sidebar-light-theme">
-              <div class="img-ss rounded-circle bg-light border mr-3"></div>
-              Claro
-            </div>
-            <div class="sidebar-bg-options" id="sidebar-dark-theme">
-              <div class="img-ss rounded-circle bg-dark border mr-3"></div>
-              Escuro
-            </div>
-            <p class="settings-heading mt-2">HEADER SKINS</p>
-            <div class="color-tiles mx-0 px-4">
-              <div class="tiles success"></div>
-              <div class="tiles warning active"></div>
-              <div class="tiles danger"></div>
-              <div class="tiles primary"></div>
-              <div class="tiles info"></div>
-              <div class="tiles dark"></div>
-              <div class="tiles default border"></div>
-            </div>
-          </div>
-        </div>
-        <!-- partial -->
-        <!-- partial:partials/_sidebar.html -->
-        <nav class="sidebar sidebar-offcanvas" id="sidebar">
-        <ul class="nav">
-          <li class="nav-item">
-            <div class="d-flex sidebar-profile">
-              <div class="sidebar-profile-image">
-                <!--<img src="application/views/assets/img/logo.png" alt="image">-->
-                
-              </div>
-              <!--<div class="sidebar-profile-name">
-                <p class="sidebar-name">
-                  Usuário
-                </p>
-                <p class="sidebar-designation">
-                  Bem-vindo
-                </p>
-              </div>-->
-            </div>
-            <!--<div class="nav-search">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Type to search..." aria-label="search" aria-describedby="search">
-                <div class="input-group-append">
-                  <span class="input-group-text" id="search">
-                    <i class="typcn typcn-zoom"></i>
-                  </span>
-                </div>
-              </div>
-            </div> OCULTANDO SEARCH NO MENU -->
-            <p class="sidebar-menu-title"></p>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="application/index.html">
-              <i class="typcn typcn-device-desktop menu-icon"></i>
-              <span class="menu-title">Dashboard <span class="badge badge-primary ml-3"></span></span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="application/#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="typcn typcn-briefcase menu-icon"></i>
-              <span class="menu-title">Dados</span>
-              <i class="typcn typcn-chevron-right menu-arrow"></i>
-            </a><!--
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="application/pages/ui-features/buttons.html">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="application/pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                <li class="nav-item"> <a class="nav-link" href="application/pages/ui-features/typography.html">Typography</a></li>
-              </ul>
-            </div>-->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="application/#form-elements" aria-expanded="false" aria-controls="form-elements">
-              <i class="typcn typcn-film menu-icon"></i>
-              <span class="menu-title">Mapas e Fotos</span>
-              <i class="menu-arrow"></i>
-            </a><!--
-            <div class="collapse" id="form-elements">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="application/pages/forms/basic_elements.html">Basic Elements</a></li>
-              </ul>
-            </div>-->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="application/#charts" aria-expanded="false" aria-controls="charts">
-              <i class="typcn typcn-chart-pie-outline menu-icon"></i>
-              <span class="menu-title">Relatórios</span>
-              <i class="menu-arrow"></i>
-            </a><!--
-            <div class="collapse" id="charts">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="application/pages/charts/chartjs.html">ChartJs</a></li>
-              </ul>
-            </div>-->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"  href="Administracao" aria-expanded="false" aria-controls="tables">
-              <i class="typcn typcn-th-small-outline menu-icon"></i>
-              <span class="menu-title">Administração</span>
-            </a><!--
-            <div class="collapse" id="tables">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="application/pages/tables/basic-table.html">Basic table</a></li>
-              </ul>
-            </div>-->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="application/#icons" aria-expanded="false" aria-controls="icons">
-              <i class="typcn typcn-compass menu-icon"></i>
-              <span class="menu-title">Configurações</span>
-              <i class="menu-arrow"></i>
-            </a><!--
-            <div class="collapse" id="icons">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="application/pages/icons/mdi.html">Mdi icons</a></li>
-              </ul>
-            </div>-->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="application/#auth" aria-expanded="false" aria-controls="auth">
-              <i class="typcn typcn-user-add-outline menu-icon"></i>
-              <span class="menu-title">Minha Área</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="auth">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="application/pages/samples/login.html"> Login </a></li>
-                <li class="nav-item"> <a class="nav-link" href="application/pages/samples/register.html"> Register </a></li>
-              </ul>
-            </div>
-          </li>
-          <!--<li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="application/#error" aria-expanded="false" aria-controls="error">
-              <i class="typcn typcn-globe-outline menu-icon"></i>
-              <span class="menu-title">Error pages</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="error">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="application/pages/samples/error-404.html"> 404 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="application/pages/samples/error-500.html"> 500 </a></li>
-              </ul>
-            </div>
-          </li> PÁGINA DE ERROS-->
-          <li class="nav-item">
-            <a class="nav-link" href="application/pages/documentation/documentation.html">
-              <i class="typcn typcn-document-text menu-icon"></i>
-              <span class="menu-title">Documentação</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
@@ -247,6 +88,17 @@
 
 
 <div class="mt-5">
+
+        <div class="col-10 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Estoque Atual</h4>
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+
           <div class="row">
             <div class="col-6 grid-margin stretch-card">
               <div class="card">
