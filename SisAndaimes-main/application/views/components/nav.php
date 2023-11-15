@@ -92,7 +92,7 @@
             <li class="nav-item dropdown  d-flex">
               <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="application/#" data-toggle="dropdown">
                 <i class="typcn typcn-bell mr-0"></i>
-                <span class="count laranjatop">2</span>
+                <span class="count verdetop">2</span>
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
                 <p class="mb-0 font-weight-normal float-left dropdown-header">Notificações</p>
@@ -139,7 +139,7 @@
             </li>
             <li class="nav-item nav-profile dropdown">
               <a class="nav-link dropdown-toggle  pl-0 pr-0" href="application/#" data-toggle="dropdown" id="profileDropdown">
-                <i class="typcn typcn-user-outline mr-0 attribute-label"></i>
+                <i class="typcn typcn-user-outline mr-0 attribute-value"></i>
                 <span class="nav-profile-name">Thales</span>
               </a>
              

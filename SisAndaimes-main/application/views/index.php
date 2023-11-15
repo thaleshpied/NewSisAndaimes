@@ -31,58 +31,85 @@
             </div>
 
 
-
-            <!---ABAIXO OS INDICADORES SUPERIORES COM 4 CARDS -->
-
-          <div class="row mb-3 mt-5">
-          <div class="col-xl-3 col-lg-6">
-            <div class="card card-inverse card-success">
-              <div class="card-block bg-success">
-                <div class="rotate">
-                  <i class="fa fa-cogs fa-2x"></i>
+<!-- INDICADORES NOVOS --> 
+<div class="row mt-3">
+    <div class="col-sm-6 col-md-6 col-lg-3">
+        <div class="card-stats card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-5 col-md-4">
+                        <div class="icon-big text-center icon-warning">
+                            <i class="fa fa-cogs fa-2x"></i>
+                        </div></div><div class="col-7 col-md-8">
+                            <div class="numbers text-right"><p class="card-category">Total de Equipamentos</p><p class="card-title"><?php echo $estoquetotal ?></p><p></p>
+                        </div></div></div></div><div class="card-footer"><hr>
+                        <div class="stats"><i class="fa fa-bars fa-2x"></i>
+                    </div> 
+                </div></div></div><div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card-stats card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-5 col-md-4">
+                                        <div class="icon-big text-center icon-warning">
+                                            <i class="fa fa-steam fa-2x"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-7 col-md-8"><div class="numbers text-right">
+                                        <p class="card-category">Andaimes Montados</p><p class="card-title">0</p><p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer"><hr>
+                        <div class="stats"><i class="fa fa-bars fa-2x"></i>
+                    </div>
                 </div>
-                <h6 class="text-uppercase">Total de Equipamentos</h6>
-                <h1 class="display-1"><?php echo $estoquetotal ?></h1>
-              </div>
             </div>
-          </div>
-          <div class="col-xl-3 col-lg-6">
-            <div class="card card-inverse card-danger">
-              <div class="card-block bg-danger">
-                <div class="rotate">
-                  <i class="fa fa-steam fa-2x"></i>
-                </div>
-                <h6 class="text-uppercase">Andaimes Montados</h6>
-                <h1 class="display-1">?????</h1>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-6">
-            <div class="card card-inverse card-info">
-              <div class="card-block bg-info">
-                <div class="rotate">
-                  <i class="fa fa-users fa-2x"></i>
-                </div>
-                <h6 class="text-uppercase">Montadores</h6>
-                <h1 class="display-1"><?php echo $montadores ?></h1>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-6">
-            <div class="card card-inverse card-warning">
-              <div class="card-block bg-warning">
-                <div class="rotate">
-                  <i class="fa fa-connectdevelop fa-2x"></i>
-                </div>
-                <h6 class="text-uppercase">Áreas</h6>
-                <h1 class="display-1"><?php echo $areascadastradas ?></h1>
-              </div>
-            </div>
-          </div>
         </div>
-        
+        <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="card-stats card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-5 col-md-4">
+                            <div class="icon-big text-center icon-warning">
+                                <i class="fa fa-users fa-2x"></i>
+                        </div></div><div class="col-7 col-md-8">
+                            <div class="numbers text-right"><p class="card-category">Montadores</p><p class="card-title"><?php echo $montadores ?></p><p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer"><hr>
+            <div class="stats"><i class="fa fa-bars fa-2x"></i>
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 col-md-6 col-lg-3">
+    <div class="card-stats card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-5 col-md-4">
+                    <div class="icon-big text-center icon-warning">
+                        <i class="fa fa-connectdevelop fa-2x"></i>
+                    </div>
+                </div>
+                <div class="col-7 col-md-8">
+                    <div class="numbers text-right"><p class="card-category">Áreas Montadas</p><p class="card-title"><?php echo $areascadastradas ?></p><p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer"><hr>
+    <div class="stats"><i class="fa fa-bars fa-2x"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
+            
 
     <!-- <h3 class="mb-0 font-weight-bold mt-4">Gráficos e Relatórios</mt-4> -->
 
