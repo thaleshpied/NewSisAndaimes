@@ -23,6 +23,8 @@ class Admin extends CI_Controller {
 
 		} else {
 			$dados['title'] = "Administração de Andaimes";
+			$this->load->view('components/head.php', $dados);
+			$this->load->view('components/nav.php', $dados);
 			$this->load->view('adminandaimes.php', $dados);
 
 		}
