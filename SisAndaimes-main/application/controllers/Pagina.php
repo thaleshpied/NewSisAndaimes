@@ -23,7 +23,7 @@ class Pagina extends CI_Controller {
 
 		if(!isset($_SESSION['idCliente'])) {
 			$dados['title'] = "Sis Andaimes";
-			$this->load->view('components/head.php', $dados);
+			$this->load->view('components/head.php', $dados); 
 			$this->load->view('components/login.php', $dados);
 
 		} else {
