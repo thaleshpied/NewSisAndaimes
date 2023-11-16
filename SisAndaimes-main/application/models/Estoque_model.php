@@ -61,4 +61,17 @@ class Estoque_model extends CI_Model
         return $this->db->count_all('sis_equipe');
     }
 
+
+    /*PEGANDO TUDO DA TABELA SIS_EQUIPAMENTOS*/    
+    function get_all_equipamentos()
+    {   
+        $this->db->order_by('equipamento');
+        return $this->db->get('sis_equipamentos')->result_array();
+    }
+    
+
+
+
+
+
 }

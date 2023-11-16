@@ -522,3 +522,17 @@ a{color:inherit;text-decoration:none}
     opacity: 0.7 !important;
     cursor: pointer;
 }
+#tabela{
+	overflow-y: auto;
+    max-height: calc(100vh - 360px);
+    border: solid 1px #82b781;
+    border-radius: 15px;
+    padding: 5px;
+}
+.tabela2{
+	overflow-y: auto;
+    max-height: calc(100vh - 360px);
+    border: solid 1px #82b781;
+    border-radius: 15px;
+    padding: 5px;
+}

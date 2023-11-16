@@ -35,6 +35,9 @@ class Admin extends CI_Controller {
 			$montadores = $this->Estoque_model->cont_all_montadores();
 			$dados['montadores'] = $montadores;
 
+			$equipamentos = $this->Estoque_model->get_all_equipamentos();
+			$dados['equipamentos'] = $equipamentos;
+
 			$this->load->view('components/head.php', $dados);
 			$this->load->view('components/nav.php', $dados);
 			$this->load->view('adminandaimes.php', $dados);

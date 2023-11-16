@@ -1,357 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><?=$title?></title>
-    <!-- base:css -->
-    <link rel="stylesheet" href="application/vendors/typicons.font/font/typicons.css">
-    <link rel="stylesheet" href="application/views/assets/css/vendor.bundle.base.css">
-    <link rel="stylesheet" href="application/views/assets/css/estilo.css">
-    <link rel="stylesheet" href="application/views/assets/css/vertical-layout-light/style.css">
-    <link rel="shortcut icon" href="application/views/assets/img/icon.ico" />
-
-    <!--ABAIXO DEPENDÊNCIAS DOS CARDS DOS INDICADORES-->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
-
-  </head>
-  <body>
 
   
-
-    <!--<div class="row" id="proBanner">
-      <div class="col-12">
-        <span class="d-flex align-items-center purchase-popup">
-          <p>Mensagem TOPO site</p>
-          <a href="application/https://www.bootstrapdash.com/product/celestial-admin-template/?utm_source=organic&utm_medium=banner&utm_campaign=free-preview" target="_blank" class="btn download-button purchase-button ml-auto">xxxxx</a>
-          <i class="typcn typcn-delete-outline" id="bannerClose"></i>
-        </span>
-      </div>
-    </div> MENSAGEM NO TOPO DA PÁGINA. PODE SER USADA COMO MENSAGEM EM MASSA OU MENSAGEM PARA UM USUÁIO OU LOCAL ESPECÍFICO-->
-    <div class="container-scroller">
-      <!-- partial:partials/_navbar.html -->
-      <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-          <a class="navbar-brand brand-logo" href="application/index.html"><img src="application/views/assets/img/logo.png" alt="logo"/></a>
-          <a class="navbar-brand brand-logo-mini" href="application/index.html"><img src="application/views/assets/img/logo.png" alt="logo"/></a>
-          <button class="navbar-toggler navbar-toggler align-self-center d-none d-lg-flex" type="button" data-toggle="minimize">
-            <span class="typcn typcn-th-menu"></span>
-          </button>
-        </div>
-
-        <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-          <!--<ul class="navbar-nav mr-lg-2">
-            <li class="nav-item  d-none d-lg-flex">
-              <a class="nav-link" href="application/#">
-                Aba 01
-              </a>
-            </li>
-            <li class="nav-item  d-none d-lg-flex">
-              <a class="nav-link active" href="application/#">
-                Aba 02
-              </a>
-            </li>
-            <li class="nav-item  d-none d-lg-flex">
-              <a class="nav-link" href="application/#">
-                Aba 03
-              </a>
-            </li>
-          </ul> OCULTANDO OPÇÃO DE ABAS-->
-          <ul class="navbar-nav navbar-nav-right">
-            <!--<li class="nav-item d-none d-lg-flex  mr-2">
-              <a class="nav-link" href="application/#">
-                Help
-              </a>
-            </li>-->
-            <li class="nav-item dropdown d-flex">
-              <!--<a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="application/#" data-toggle="dropdown">
-                <i class="typcn typcn-message-typing"></i>
-                <span class="count bg-success">2</span>
-              </a> RECURSO DO TOPO OCULTADO--> 
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
-                <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <img src="application/views/assets/img/faces/face4.jpg" alt="image" class="profile-pic">
-                  </div>
-                  <div class="preview-item-content flex-grow">
-                    <h6 class="preview-subject ellipsis font-weight-normal">David Grey
-                    </h6>
-                    <p class="font-weight-light small-text mb-0">
-                      The meeting is cancelled
-                    </p>
-                  </div>
-                </a>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <img src="application/views/assets/img/faces/face2.jpg" alt="image" class="profile-pic">
-                  </div>
-                  <div class="preview-item-content flex-grow">
-                    <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
-                    </h6>
-                    <p class="font-weight-light small-text mb-0">
-                      New product launch
-                    </p>
-                  </div>
-                </a>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <img src="application/views/assets/img/faces/face3.jpg" alt="image" class="profile-pic">
-                  </div>
-                  <div class="preview-item-content flex-grow">
-                    <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
-                    </h6>
-                    <p class="font-weight-light small-text mb-0">
-                      Upcoming board meeting
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li class="nav-item dropdown  d-flex">
-              <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="application/#" data-toggle="dropdown">
-                <i class="typcn typcn-bell mr-0"></i>
-                <span class="count laranjatop">2</span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-                <p class="mb-0 font-weight-normal float-left dropdown-header">Notificações</p>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-success">
-                      <i class="typcn typcn-info-large mx-0"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <h6 class="preview-subject font-weight-normal">Mensagem</h6>
-                    <p class="font-weight-light small-text mb-0">
-                      xxxx
-                    </p>
-                  </div>
-                </a>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-warning">
-                      <i class="typcn typcn-cog mx-0"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <h6 class="preview-subject font-weight-normal">Alerta</h6>
-                    <p class="font-weight-light small-text mb-0">
-                      xxxx
-                    </p>
-                  </div>
-                </a>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-info">
-                      <i class="typcn typcn-user-outline mx-0"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <h6 class="preview-subject font-weight-normal">Mensagem 3</h6>
-                    <p class="font-weight-light small-text mb-0">
-                      xxxx
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li class="nav-item nav-profile dropdown">
-              <a class="nav-link dropdown-toggle  pl-0 pr-0" href="application/#" data-toggle="dropdown" id="profileDropdown">
-                <i class="typcn typcn-user-outline mr-0"></i>
-                <span class="nav-profile-name">Usuário</span>
-              </a>
-              <form class="form-signin" id="form-logout" name="form-logout" role="form" method="post" action="<?php echo base_url('Pagina/logout'); ?>">
-						
-					</form>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-                <a class="dropdown-item">
-                <i class="typcn typcn-cog text-primary"></i>
-                Configurações
-                </a>
-                <a class="dropdown-item">
-                <i class="typcn typcn-power text-primary"></i>
-                Logout
-                </a>
-                <fieldset>
-							<button class="btn pull-right" id="btnDeslogar" name="btnDeslogar" type="submit" value="Register" name="register">
-								<i class="typcn typcn-arrow-forward-outline mr-2"></i> <label> Sair </label>
-							</button>
-						</fieldset>
-              </div>
-            </li>
-          </ul>
-          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-            <span class="typcn typcn-th-menu"></span>
-          </button>
-        </div>
-      </nav>
-      <!-- partial -->
-      <div class="page-body-wrapper">
-        <!-- partial:partials/_settings-panel.html -->
-        <div class="theme-setting-wrapper">
-          <!--BOTAO DE CONFIGURAÇÃO DE TEMA--><div id="settings-trigger" style="display:none"><i class="typcn typcn-cog-outline"></i></div>
-          <div id="theme-settings" class="settings-panel">
-            <i class="settings-close typcn typcn-delete-outline"></i>
-            <p class="settings-heading">Tema</p>
-            <div class="sidebar-bg-options selected" id="sidebar-light-theme">
-              <div class="img-ss rounded-circle bg-light border mr-3"></div>
-              Claro
-            </div>
-            <div class="sidebar-bg-options" id="sidebar-dark-theme">
-              <div class="img-ss rounded-circle bg-dark border mr-3"></div>
-              Escuro
-            </div>
-            <p class="settings-heading mt-2">HEADER SKINS</p>
-            <div class="color-tiles mx-0 px-4">
-              <div class="tiles success"></div>
-              <div class="tiles warning active"></div>
-              <div class="tiles danger"></div>
-              <div class="tiles primary"></div>
-              <div class="tiles info"></div>
-              <div class="tiles dark"></div>
-              <div class="tiles default border"></div>
-            </div>
-          </div>
-        </div>
-        <!-- partial -->
-        <!-- partial:partials/_sidebar.html -->
-        <nav class="sidebar sidebar-offcanvas" id="sidebar">
-        <ul class="nav">
-          <li class="nav-item">
-            <div class="d-flex sidebar-profile">
-              <div class="sidebar-profile-image">
-                <!--<img src="application/views/assets/img/logo.png" alt="image">-->
-                
-              </div>
-              <!--<div class="sidebar-profile-name">
-                <p class="sidebar-name">
-                  Usuário
-                </p>
-                <p class="sidebar-designation">
-                  Bem-vindo
-                </p>
-              </div>-->
-            </div>
-            <!--<div class="nav-search">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Type to search..." aria-label="search" aria-describedby="search">
-                <div class="input-group-append">
-                  <span class="input-group-text" id="search">
-                    <i class="typcn typcn-zoom"></i>
-                  </span>
-                </div>
-              </div>
-            </div> OCULTANDO SEARCH NO MENU -->
-            <p class="sidebar-menu-title"></p>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="application/index.html">
-              <i class="typcn typcn-device-desktop menu-icon"></i>
-              <span class="menu-title">Dashboard <span class="badge badge-primary ml-3"></span></span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="application/#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="typcn typcn-briefcase menu-icon"></i>
-              <span class="menu-title">Dados</span>
-              <i class="typcn typcn-chevron-right menu-arrow"></i>
-            </a><!--
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="application/pages/ui-features/buttons.html">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="application/pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                <li class="nav-item"> <a class="nav-link" href="application/pages/ui-features/typography.html">Typography</a></li>
-              </ul>
-            </div>-->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="application/#form-elements" aria-expanded="false" aria-controls="form-elements">
-              <i class="typcn typcn-film menu-icon"></i>
-              <span class="menu-title">Mapas e Fotos</span>
-              <i class="menu-arrow"></i>
-            </a><!--
-            <div class="collapse" id="form-elements">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="application/pages/forms/basic_elements.html">Basic Elements</a></li>
-              </ul>
-            </div>-->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="application/#charts" aria-expanded="false" aria-controls="charts">
-              <i class="typcn typcn-chart-pie-outline menu-icon"></i>
-              <span class="menu-title">Relatórios</span>
-              <i class="menu-arrow"></i>
-            </a><!--
-            <div class="collapse" id="charts">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="application/pages/charts/chartjs.html">ChartJs</a></li>
-              </ul>
-            </div>-->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"  href="administracao" aria-expanded="false" aria-controls="tables">
-              <i class="typcn typcn-th-small-outline menu-icon"></i>
-              <span class="menu-title">Administração</span>
-            </a><!--
-            <div class="collapse" id="tables">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="application/pages/tables/basic-table.html">Basic table</a></li>
-              </ul>
-            </div>-->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="application/#icons" aria-expanded="false" aria-controls="icons">
-              <i class="typcn typcn-compass menu-icon"></i>
-              <span class="menu-title">Configurações</span>
-              <i class="menu-arrow"></i>
-            </a><!--
-            <div class="collapse" id="icons">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="application/pages/icons/mdi.html">Mdi icons</a></li>
-              </ul>
-            </div>-->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="application/#auth" aria-expanded="false" aria-controls="auth">
-              <i class="typcn typcn-user-add-outline menu-icon"></i>
-              <span class="menu-title">Minha Área</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="auth">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="application/pages/samples/login.html"> Login </a></li>
-                <li class="nav-item"> <a class="nav-link" href="application/pages/samples/register.html"> Register </a></li>
-              </ul>
-            </div>
-          </li>
-          <!--<li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="application/#error" aria-expanded="false" aria-controls="error">
-              <i class="typcn typcn-globe-outline menu-icon"></i>
-              <span class="menu-title">Error pages</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="error">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="application/pages/samples/error-404.html"> 404 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="application/pages/samples/error-500.html"> 500 </a></li>
-              </ul>
-            </div>
-          </li> PÁGINA DE ERROS-->
-          <li class="nav-item">
-            <a class="nav-link" href="application/pages/documentation/documentation.html">
-              <i class="typcn typcn-document-text menu-icon"></i>
-              <span class="menu-title">Documentação</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
@@ -381,179 +29,166 @@
               </div>
             </div>
 
+         
 
 
-            <!---ABAIXO OS INDICADORES SUPERIORES COM 4 CARDS -->
-
-          <div class="row mb-3 mt-5">
-          <div class="col-xl-3 col-lg-6">
-            <div class="card card-inverse card-success">
-              <div class="card-block bg-success">
-                <div class="rotate">
-                  <i class="fa fa-user fa-2x"></i>
+<!-- INDICADORES NOVOS --> 
+<div class="row mt-3">
+    <div class="col-sm-6 col-md-6 col-lg-3">
+        <div class="card-stats card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-5 col-md-4">
+                        <div class="icon-big text-center icon-warning">
+                            <i class="fa fa-cogs fa-2x"></i>
+                        </div></div><div class="col-7 col-md-8">
+                            <div class="numbers text-right"><p class="card-category">Total de Equipamentos</p><p class="card-title"><?php echo $estoquetotal ?></p><p></p>
+                        </div></div></div></div><div class="card-footer"><hr>
+                        <div class="stats"><i class="fa fa-bars fa-2x"></i>
+                    </div> 
+                </div></div></div><div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card-stats card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-5 col-md-4">
+                                        <div class="icon-big text-center icon-warning">
+                                            <i class="fa fa-steam fa-2x"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-7 col-md-8"><div class="numbers text-right">
+                                        <p class="card-category">Andaimes Montados</p><p class="card-title">0</p><p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer"><hr>
+                        <div class="stats"><i class="fa fa-bars fa-2x"></i>
+                    </div>
                 </div>
-                <h6 class="text-uppercase">Total de Equipamentos</h6>
-                <h1 class="display-1">134</h1>
-              </div>
             </div>
-          </div>
-          <div class="col-xl-3 col-lg-6">
-            <div class="card card-inverse card-danger">
-              <div class="card-block bg-danger">
-                <div class="rotate">
-                  <i class="fa fa-list fa-2x"></i>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="card-stats card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-5 col-md-4">
+                            <div class="icon-big text-center icon-warning">
+                                <i class="fa fa-users fa-2x"></i>
+                        </div></div><div class="col-7 col-md-8">
+                            <div class="numbers text-right"><p class="card-category">Montadores</p><p class="card-title"><?php echo $montadores ?></p><p></p>
+                        </div>
+                    </div>
                 </div>
-                <h6 class="text-uppercase">Andaimes Montados</h6>
-                <h1 class="display-1">87</h1>
-              </div>
             </div>
-          </div>
-          <div class="col-xl-3 col-lg-6">
-            <div class="card card-inverse card-info">
-              <div class="card-block bg-info">
-                <div class="rotate">
-                  <i class="fa fa-share fa-2x"></i>
-                </div>
-                <h6 class="text-uppercase">Montadores</h6>
-                <h1 class="display-1">125</h1>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-6">
-            <div class="card card-inverse card-warning">
-              <div class="card-block bg-warning">
-                <div class="rotate">
-                  <i class="fa fa-share fa-2x"></i>
-                </div>
-                <h6 class="text-uppercase">Áreas</h6>
-                <h1 class="display-1">36</h1>
-              </div>
-            </div>
-          </div>
+            <div class="card-footer"><hr>
+            <div class="stats"><i class="fa fa-bars fa-2x"></i>
         </div>
-        
-
-
-
-    <!-- <h3 class="mb-0 font-weight-bold mt-4">Gráficos e Relatórios</mt-4> -->
-
-
-<div class="main-panel">
-          
-
-
-        
-
-
-<div class="product-carousel">
-        <div class="product">
-            <img src="produto1.jpg" alt="Produto 1">
-            <h2>Produto 1</h2>
-            <ul class="product-attributes">
-                <li><span class="attribute-label">Código:</span> <span class="attribute-value">Seu Código Aqui</span></li>
-                <li><span class="attribute-label">Descrição:</span> <span class="attribute-value">Sua Descrição Aqui</span></li>
-                <!-- Adicione os outros atributos aqui -->
-            </ul>
-            <div class="product-actions">
-                <span class="action-icon">Editar</span>
-                <span class="action-icon">Excluir</span>
-                <span class="action-icon">Informação</span>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src="produto2.jpg" alt="Produto 2">
-            <h2>Produto 2</h2>
-            <ul class="product-attributes">
-                <li><span class="attribute-label">Código:</span> <span class="attribute-value">Outro Código Aqui</span></li>
-                <li><span class="attribute-label">Descrição:</span> <span class="attribute-value">Outra Descrição Aqui</span></li>
-                <!-- Adicione os outros atributos aqui -->
-            </ul>
-            <div class="product-actions">
-                <span class="action-icon">Editar</span>
-                <span class="action-icon">Excluir</span>
-                <span class="action-icon">Informação</span>
-            </div>
-        </div>
-
-
-        <div class="product">
-            <img src="produto2.jpg" alt="Produto 2">
-            <h2>Produto 2</h2>
-            <ul class="product-attributes">
-                <li><span class="attribute-label">Código:</span> <span class="attribute-value">Outro Código Aqui</span></li>
-                <li><span class="attribute-label">Descrição:</span> <span class="attribute-value">Outra Descrição Aqui</span></li>
-                <!-- Adicione os outros atributos aqui -->
-            </ul>
-            <div class="product-actions">
-                <span class="action-icon">Editar</span>
-                <span class="action-icon">Excluir</span>
-                <span class="action-icon">Informação</span>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src="produto2.jpg" alt="Produto 2">
-            <h2>Produto 2</h2>
-            <ul class="product-attributes">
-                <li><span class="attribute-label">Código:</span> <span class="attribute-value">Outro Código Aqui</span></li>
-                <li><span class="attribute-label">Descrição:</span> <span class="attribute-value">Outra Descrição Aqui</span></li>
-                <!-- Adicione os outros atributos aqui -->
-            </ul>
-            <div class="product-actions">
-                <span class="action-icon">Editar</span>
-                <span class="action-icon">Excluir</span>
-                <span class="action-icon">Informação</span>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src="produto2.jpg" alt="Produto 2">
-            <h2>Produto 2</h2>
-            <ul class="product-attributes">
-                <li><span class="attribute-label">Código:</span> <span class="attribute-value">Outro Código Aqui</span></li>
-                <li><span class="attribute-label">Descrição:</span> <span class="attribute-value">Outra Descrição Aqui</span></li>
-                <!-- Adicione os outros atributos aqui -->
-            </ul>
-            <div class="product-actions">
-                <span class="action-icon">Editar</span>
-                <span class="action-icon">Excluir</span>
-                <span class="action-icon">Informação</span>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src="produto2.jpg" alt="Produto 2">
-            <h2>Produto 2</h2>
-            <ul class="product-attributes">
-                <li><span class="attribute-label">Código:</span> <span class="attribute-value">Outro Código Aqui</span></li>
-                <li><span class="attribute-label">Descrição:</span> <span class="attribute-value">Outra Descrição Aqui</span></li>
-                <!-- Adicione os outros atributos aqui -->
-            </ul>
-            <div class="product-actions">
-                <span class="action-icon">Editar</span>
-                <span class="action-icon">Excluir</span>
-                <span class="action-icon">Informação</span>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src="produto2.jpg" alt="Produto 2">
-            <h2>Produto 2</h2>
-            <ul class="product-attributes">
-                <li><span class="attribute-label">Código:</span> <span class="attribute-value">Outro Código Aqui</span></li>
-                <li><span class="attribute-label">Descrição:</span> <span class="attribute-value">Outra Descrição Aqui</span></li>
-                <!-- Adicione os outros atributos aqui -->
-            </ul>
-            <div class="product-actions">
-                <span class="action-icon">Editar</span>
-                <span class="action-icon">Excluir</span>
-                <span class="action-icon">Informação</span>
-            </div>
-        </div>
-        <!-- Adicione mais produtos conforme necessário -->
-
     </div>
+</div>
+</div>
+<div class="col-sm-6 col-md-6 col-lg-3">
+    <div class="card-stats card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-5 col-md-4">
+                    <div class="icon-big text-center icon-warning">
+                        <i class="fa fa-connectdevelop fa-2x"></i>
+                    </div>
+                </div>
+                <div class="col-7 col-md-8">
+                    <div class="numbers text-right"><p class="card-category">Áreas Montadas</p><p class="card-title"><?php echo $areascadastradas ?></p><p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer"><hr>
+    <div class="stats"><i class="fa fa-bars fa-2x"></i>
+</div>
+</div>
+</div>
+</div>
+</div> <!-- FIM DOS INDICADORES --> 
+
+
+
+
+<div class="row mt-5" id="tabela">
+	<div class="col-4">
+		<div class="card-user card tabela2">
+			<div class="image">
+                <div class="grid-margin stretch-card">
+                
+                    <div class="card-body">
+                    <h4 class="attribute-label">Gaveteiro</h4>
+                    <canvas id="doughnutChart"></canvas>
+                    
+                </div>
+                </div>
+			</div>
+			<div class="card-body">
+				<div class="author"><a href="">
+					<h5 class="title">Dados</h5></a>
+					<p class="description">Descrição</p>
+				</div>
+				
+				<p class="description text-center">"Descrição
+					<br>Descrição 
+					<br>Descrição
+				</p>
+			</div>
+
+			<div class="card-footer"><hr>
+				<div class="button-container">
+					<div class="row">
+						<div class="ml-auto col-6 col-md-6 col-lg-3"><h5>12 
+							<br><small>Tipo</small></h5>
+						</div>
+						<div class="ml-auto mr-auto col-6 col-md-6 col-lg-4"><h5>2G
+							<br><small>Previsão</small></h5>
+						</div>
+						<div class="mr-auto col-lg-3"><h5>24
+							<br><small>Realizado</small></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="card-body col-8">
+		<div class="table-responsive">
+			<table class="table">
+				<thead class="attribute-label">                    
+					<tr>					
+						<th>Equipamento</th>
+						<th>Metro Linear</th>
+						<th>Implantado</th>
+						<th>Físico</th>
+                        <th>Em uso</th>
+					</tr>
+                    </thead>
+                    <tbody>
+                    <?php foreach($equipamentos as $p){ ?>
+                        <tr>                    
+                            <td> <?php echo $p['equipamento']; ?></td>
+                            <td><?php echo $p['metrolinear']; ?></td>
+                            <td><?php echo $p['saldoimplantado']; ?></td>
+                            <td><?php echo $p['saldofisico']; ?></td>
+                            <td><?php echo $p['saldoemuso']; ?></td>
+                        </tr>
+                    <?php } ?>  
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
 
 
 
