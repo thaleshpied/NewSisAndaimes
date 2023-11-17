@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Admin extends CI_Controller {
+class Relatorios extends CI_Controller {
 
 	
 	protected $dados = array();
@@ -40,7 +40,7 @@ class Admin extends CI_Controller {
 
 			$this->load->view('components/head.php', $dados);
 			$this->load->view('components/nav.php', $dados);
-			$this->load->view('andaimesmontados.php', $dados);
+			$this->load->view('adminandaimes.php', $dados);
 
 
 		}

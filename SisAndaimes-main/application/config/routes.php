@@ -57,6 +57,9 @@ $route['default_controller'] = 'Pagina/index';
 //ADMINISTRAÇÃO DE ANDAIMES
 $route['Administracao'] = 'Admin/index';
 
+//RELATÓRIOS DE ANDAIMES
+$route['Relatorios'] = 'Relatorios/index';
+
 
 //RODAS DO FRAMEWORK 
 $route['404_override'] = ''; //ROTA PARA PÁGINA DE ERRO

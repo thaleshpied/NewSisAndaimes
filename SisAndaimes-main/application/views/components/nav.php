@@ -1,4 +1,4 @@
-<body>
+<body class="sidebar-icon-only">
 
     <!--<div class="row" id="proBanner">
       <div class="col-12">
@@ -252,16 +252,16 @@
                 <li class="nav-item"><a class="nav-link" href="application/pages/forms/basic_elements.html">Basic Elements</a></li>
               </ul>
             </div>
-          </li>
+          </li>-->
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="application/#charts" aria-expanded="false" aria-controls="charts">
+            <a class="nav-link" href="Relatorios" aria-expanded="false" aria-controls="charts">
               <i class="typcn typcn-chart-pie-outline menu-icon"></i>
               <span class="menu-title">Relatórios</span>
-              <i class="menu-arrow"></i>
-            </a>--><!--
-            <div class="collapse" id="charts">
+              <!--<i class="menu-arrow"></i>-->
+            </a>
+            <!-- <div class="collapse" id="charts">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="application/pages/charts/chartjs.html">ChartJs</a></li>
+                <li class="nav-item"> <a class="nav-link" href="application/pages/charts/chartjs.html">xx</a></li>
               </ul>
             </div>-->
           </li>
