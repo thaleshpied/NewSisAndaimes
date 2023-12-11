@@ -140,8 +140,6 @@ $(document).ready(function(){
 				}
 			});
 			window.location.href = "<?php echo base_url()?>";
-
-
 			
 			// Limpando o formulário
 			//document.getElementById("form-login").reset();	
@@ -153,9 +151,11 @@ $(document).ready(function(){
 
 </script>
 
-<!--SCRIPT ANIMAÇÃO DE TEXTO - REFATORAR -->
 
-<script>
+
+
+
+<script> //SCRIPT PARA ANMIMAÇÃO DO TEXTO NO LOGIN 
 	jQuery(document).ready(function($){
 	//set animation timing
 	var animationDelay = 2500,
@@ -174,7 +174,7 @@ $(document).ready(function(){
 	
 	initHeadline();
 	
-
+	//ANIMAÇÇÃO DE TEXTO
 	function initHeadline() {
 		//insert <i> element for each letter of a changing word
 		singleLetters($('.cd-headline.letters').find('b'));
@@ -182,6 +182,7 @@ $(document).ready(function(){
 		animateHeadline($('.cd-headline'));
 	}
 
+	//ANIMAÇÇÃO DE TEXTO
 	function singleLetters($words) {
 		$words.each(function(){
 			var word = $(this),
@@ -195,7 +196,8 @@ $(document).ready(function(){
 		    word.html(newLetters).css('opacity', 1);
 		});
 	}
-
+	
+	//ANIMAÇÇÃO DE TEXTO
 	function animateHeadline($headlines) {
 		var duration = animationDelay;
 		$headlines.each(function(){
@@ -224,6 +226,7 @@ $(document).ready(function(){
 		});
 	}
 
+	//ANIMAÇÇÃO DE TEXTO
 	function hideWord($word) {
 		var nextWord = takeNext($word);
 		

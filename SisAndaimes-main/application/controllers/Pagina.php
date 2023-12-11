@@ -27,7 +27,14 @@ class Pagina extends CI_Controller {
 			$this->load->view('components/login.php', $dados);
 
 		} else {
+
 			$dados['title'] = "Sis Andaimes";
+
+
+			$emuso = $this->Estoque_model->saldoemuso();
+			$dados['emuso'] = $emuso;
+
+
 
 			$estoquetotal = $this->Estoque_model->cont_all_estoque();
 			$dados['estoquetotal'] = $estoquetotal;

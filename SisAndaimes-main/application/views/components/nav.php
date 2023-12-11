@@ -4,13 +4,12 @@
       <div class="col-12">
         <span class="d-flex align-items-center purchase-popup">
           <p>Mensagem TOPO site</p>
-          <a href="application/https://www.bootstrapdash.com/product/celestial-admin-template/?utm_source=organic&utm_medium=banner&utm_campaign=free-preview" target="_blank" class="btn download-button purchase-button ml-auto">xxxxx</a>
+          <a href="">xxxxx</a>
           <i class="typcn typcn-delete-outline" id="bannerClose"></i>
         </span>
       </div>
     </div> MENSAGEM NO TOPO DA PÁGINA. PODE SER USADA COMO MENSAGEM EM MASSA OU MENSAGEM PARA UM USUÁIO OU LOCAL ESPECÍFICO-->
     <div class="container-scroller">
-      <!-- partial:partials/_navbar.html -->
       <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
           <a class="navbar-brand brand-logo" href="application/index.html"><img src="application/views/assets/img/logo.png" alt="logo"/></a>

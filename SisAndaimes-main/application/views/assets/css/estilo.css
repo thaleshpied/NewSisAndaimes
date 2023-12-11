@@ -198,6 +198,22 @@ a{color:inherit;text-decoration:none}
 	display: none;
 	transition: 2s;
 }
+/*
+display: inline-flex;
+background: linear-gradient(88deg, #010100 0%, rgb(34 59 36) 35%, rgb(238 243 244 / 35%) 100%);
+width: 100%;
+margin-left: 0px;
+transition: 2s;
+*/
+
+
+
+
+
+
+
+
+
 
 .logologin{
 	margin-top: 20%;

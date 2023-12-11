@@ -69,7 +69,16 @@ class Estoque_model extends CI_Model
         return $this->db->get('sis_equipamentos')->result_array();
     }
     
+    /*PEGANDO DADOS PARA GRÁFICO DE ESTOQUE GERAL EM USO, IMPLANTADO, FÍSICO DA TABELA SIS_EQUIPAMENTOS*/    
+    public function saldoemuso() {
+        $query = $this->db->query("SELECT 
+            SUM(SALDOEMUSO) AS EMUSO,
+            SUM(SALDOFISICO) AS FISICO,
+            SUM(SALDOIMPLANTADO) AS IMPLANTADO
+            FROM sis_equipamentos");
 
+        return $query->row(); // Retorna uma única linha como objeto
+    }
 
 
 
