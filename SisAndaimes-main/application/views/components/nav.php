@@ -1,4 +1,4 @@
-<body class="sidebar-icon-only">
+<body class="">
 
     <!--<div class="row" id="proBanner">
       <div class="col-12">
@@ -12,7 +12,7 @@
     <div class="container-scroller">
       <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-          <a class="navbar-brand brand-logo" href="application/index.html"><img src="application/views/assets/img/logo.png" alt="logo"/></a>
+          <a class="navbar-brand brand-logo d-none" href="application/index.html"><img src="application/views/assets/img/logo.png" alt="logo"/></a>
           <a class="navbar-brand brand-logo-mini" href="application/index.html"><img src="application/views/assets/img/logo.png" alt="logo"/></a>
           <button class="navbar-toggler navbar-toggler align-self-center d-none d-lg-flex" type="button" data-toggle="minimize">
             <span class="typcn typcn-th-menu"></span>
@@ -20,6 +20,9 @@
         </div>
 
         <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+          
+        <a class="navbar-brand brand-logo" href="application/index.html"><img src="application/views/assets/img/logo2.png" alt="logo" id="logo2"></a>
+       
           <!--<ul class="navbar-nav mr-lg-2">
             <li class="nav-item  d-none d-lg-flex">
               <a class="nav-link" href="application/#">
@@ -88,7 +91,29 @@
                 </a>
               </div>
             </li>
+
+            
+
+
+            <li class="nav-item nav-profile dropdown" style="font-size: 20px;">
+                                    <?php 
+
+                        if (!isset($andaimes)){
+
+                          } else {     //alerta de andaime em montagem
+                              echo '<i class="fa fa-exclamation-triangle blinking" title="Andaimes não sincronizados"></i>';
+                          }
+
+                        ?>
+             
+              
+            </li>
+
+
+
+
             <li class="nav-item dropdown  d-flex">
+              
               <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="application/#" data-toggle="dropdown">
                 <i class="typcn typcn-bell mr-0"></i>
                 <span class="count verdetop">2</span>
@@ -135,7 +160,9 @@
                   </div>
                 </a>
               </div>
+              
             </li>
+            
             <li class="nav-item nav-profile dropdown">
               <a class="nav-link dropdown-toggle  pl-0 pr-0" href="application/#" data-toggle="dropdown" id="profileDropdown">
                 <i class="typcn typcn-user-outline mr-0 attribute-value"></i>
@@ -150,9 +177,10 @@
                     <label> Sair </label>
                 </button>
                   
-              </form>
-                
+              </form>                
               </div>
+            </li>
+            
             </li>
           </ul>
           <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
@@ -254,7 +282,7 @@
           </li>-->
           <li class="nav-item">
             <a class="nav-link" href="Relatorios" aria-expanded="false" aria-controls="charts">
-              <i class="typcn typcn-chart-pie-outline menu-icon"></i>
+            <i class="fa fa-line-chart menu-icon" aria-hidden="true"></i>
               <span class="menu-title">Relatórios</span>
               <!--<i class="menu-arrow"></i>-->
             </a>
@@ -265,22 +293,28 @@
             </div>-->
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Administracao" aria-expanded="false" aria-controls="tables">
+            <a class="nav-link" href="" aria-expanded="false" aria-controls="tables">
               <i class="typcn typcn-th-small-outline menu-icon"></i>
               <span class="menu-title">Administração</span>
-            </a><!--
+              <i class="menu-arrow"></i>
+            </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="application/pages/tables/basic-table.html">Basic table</a></li>
+                <li class="nav-item"> <a class="nav-link" href="Administracao">Andaimes</a></li>
+                
+                <li class="nav-item"> <a class="nav-link" href="Administracao">Áreas</a></li>
+                
+                <li class="nav-item"> <a class="nav-link" href="Administracao">Montadores</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="application/#icons" aria-expanded="false" aria-controls="icons">
-              <i class="typcn typcn-compass menu-icon"></i>
+              
+              <i class="fa fa-wrench menu-icon" aria-hidden="true"></i>
               <span class="menu-title">Configurações</span>
               <i class="menu-arrow"></i>
-            </a>--><!--
+            </a><!--
             <div class="collapse" id="icons">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="application/pages/icons/mdi.html">Mdi icons</a></li>

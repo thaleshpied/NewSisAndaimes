@@ -1,9 +1,11 @@
 
-
       
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
+            
+            
+
             <div class="row">
               <div class="col-sm-6">
                 <div class="d-flex">
@@ -32,7 +34,10 @@
 
 
 <!-- INDICADORES NOVOS --> 
+
+
 <div class="row mt-3">
+           
     <div class="col-sm-6 col-md-6 col-lg-3">
         <div class="card-stats card">
             <div class="card-body">
@@ -41,9 +46,10 @@
                         <div class="icon-big text-center icon-warning">
                             <i class="fa fa-cogs fa-2x"></i>
                         </div></div><div class="col-7 col-md-8">
-                            <div class="numbers text-right"><p class="card-category">Total de Equipamentos</p><p class="card-title"><?php echo $estoquetotal ?></p><p></p>
+                            <div class="numbers text-right"><p class="card-category">Equipamentos</p><p class="card-title"><?php echo $estoquetotal ?></p><p></p>
                         </div></div></div></div><div class="card-footer"><hr>
-                        <div class="stats"><i class="fa fa-bars fa-2x"></i>
+                        <div class="stats">
+                            <!--<i class="fa fa-bars fa-2x"></i>-->
                     </div> 
                 </div></div></div><div class="col-sm-6 col-md-6 col-lg-3">
                         <div class="card-stats card">
@@ -61,8 +67,17 @@
                             </div>
                         </div>
                         <div class="card-footer"><hr>
-                        <div class="stats"><i class="fa fa-bars fa-2x"></i>
+                        <div class="stats">
+                        <div>
+                            <i class="fa fa-plus-square fa-2x disable" id="plus" onclick="addAndaime1()" title="Clique para adicionar Andaime"></i>
+                        </div>  
+                        <div id="addandaime" class="input-with-icon">
+                            <input type="text" id="andaime" name="andaime" placeholder="Nome do Andaime">
+                            <i class="fa fa-plus-square fa-2x disable" id="plus" onclick="addAndaime()" title="Clique para adicionar Andaime"></i>
+                        </div>                   
                     </div>
+                   
+
                 </div>
             </div>
         </div>
@@ -80,7 +95,8 @@
                 </div>
             </div>
             <div class="card-footer"><hr>
-            <div class="stats"><i class="fa fa-bars fa-2x"></i>
+            <div class="stats">
+                <!--<i class="fa fa-bars fa-2x"></i>-->
         </div>
     </div>
 </div>
@@ -95,26 +111,134 @@
                     </div>
                 </div>
                 <div class="col-7 col-md-8">
-                    <div class="numbers text-right"><p class="card-category">Áreas Montadas</p><p class="card-title"><?php echo $areascadastradas ?></p><p></p>
+                    <div class="numbers text-right"><p class="card-category">Áreas</p><p class="card-title"><?php echo $areascadastradas ?></p><p></p>
                 </div>
             </div>
         </div>
     </div>
     <div class="card-footer"><hr>
-    <div class="stats"><i class="fa fa-bars fa-2x"></i>
+    <div class="stats">
+        <!--<i class="fa fa-bars fa-2x"></i> -->
 </div>
 </div>
 </div>
 </div>
 </div>
 
+<!-- <h3 class="mb-0 font-weight-bold mt-4">Gráficos e Relatórios</mt-4> -->
 
+
+
+<?php if (!empty($andaimes)): ?>
+
+<div class="row mt-3">
+    <small class="text-muted mt-5 font-laranja">Andaimes em montagem <i class="fa fa-level-down" aria-hidden="true"></i></small> 
+</div>
+<?php endif; ?> 
+
+<div class="row mt-3 mb-5" id="andprincipal">
+        
+        <?php if (!empty($andaimes)): ?>
+        <div class="d-flex flex-nowrap"> <!-- Adicionado a classe "d-flex" e "flex-nowrap" -->            
             
 
-    <!-- <h3 class="mb-0 font-weight-bold mt-4">Gráficos e Relatórios</mt-4> -->
+            <?php foreach ($andaimes as $andaime): ?>
+                <div class="col-sm-6 col-md-6 col-lg-3 andaimegeral"> <!-- INÍCIO DAS INFORMAÇÕES DE CADA ANDAIME -->
+                    <div class="card-stats card2">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-5 col-md-4" id="imgandaime">
+                                    <img src="application/views/assets/img/andaime1.jpeg" alt="Andaime">
+                                </div>
+                                <div class="card-actions text-center">    
+                                <button mat-raised-button="" type="button" mattooltip="Editar" class="btn btn-default btn-link mat-raised-button mat-button-base" 
+                                data-toggle="modal" data-target="#exampleModalCenter"
+                                aria-describedby="cdk-describedby-message-2" cdk-describedby-host="">
+                                    <span class="mat-button-wrapper"><i class="fa fa-list-ul text-secondary" aria-hidden="true"></i></span>
+                                    <div matripple="" class="mat-ripple mat-button-ripple"></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </button><!---->  
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Informações Sobre o Andaime</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                        <!-- <button type="button" class="btn btn-primary">Salvar</button> -->
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>                                 
+                                <button mat-raised-button="" type="button" mattooltip="Editar" class="btn btn-default btn-link mat-raised-button mat-button-base" aria-describedby="cdk-describedby-message-2" cdk-describedby-host="">
+                                    <span class="mat-button-wrapper"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                                    <div matripple="" class="mat-ripple mat-button-ripple"></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </button><!---->                                
+                                <button mat-raised-button="" type="button" mattooltip="Remove" class="btn btn-default" onclick="removerAndaime(<?= $andaime['andaime']; ?>)">
+                                    <span class="mat-button-wrapper">
+                                        <i class="fa fa-times text-danger" aria-hidden="true"></i></span>
+                                    <div matripple="" class="mat-ripple mat-button-ripple"></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </button><!---->
+                                <button mat-raised-button="" type="button" mattooltip="Salvar" class="btn btn-default">
+                                    <span class="mat-button-wrapper">
+                                    <i class="fa fa-check-square-o text-success" aria-hidden="true"></i></span>
+                                    <div matripple="" class="mat-ripple mat-button-ripple"></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </button><!---->
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card-footer"><hr>
+                            <div class="stats">
+                                <h6 class="my-0"><?= $andaime['andaime']; ?></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?><!-- TÉRMINO DAS INFORMAÇÕES DE CADA ANDAIME -->
+        </div>
+    <?php endif; ?>
+</div> <!-- FIM DA NOVA TELA ANDAIMES ADICIONADOS -->
 
 
-<div class="mt-5">
+
+
+
+
+
+
+
+
+<div class="row">
+<div class="row mb-2">
+    <small class="text-muted mt-5 font-laranja">Gráficos <i class="fa fa-level-down" aria-hidden="true"></i></small> 
+</div>
+            <div class="col-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Produtividade Geral</h4>
+                  <canvas id="areaChart"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Produtividade Mensal</h4>
+                  <canvas id="doughnutChart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
 
         <div class="col-10 grid-margin stretch-card">
             <div class="card">
@@ -144,31 +268,6 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Produtividade Geral</h4>
-                  <canvas id="areaChart"></canvas>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Produtividade Mensal</h4>
-                  <canvas id="doughnutChart"></canvas>
-                </div>
-              </div>
-            </div>
-          </div>
-         
-       
-      
-
-
-
-
 
 
 
@@ -193,35 +292,48 @@
     </div>
     <!-- container-scroller -->
 
-   
-    
+<script>
+    var doughnutPieData = {
+    datasets: [{
+      data: [30, 40, 30],
+      backgroundColor: [
+        '#1b4025',
+        '#ff9900',
+        'gray',
+      ],
+      
+    }],
+
+    // These labels appear in the legend and in the tooltips when hovering different arcs
+    labels: [
+      'Implantado',
+      'Em Uso',
+      'Físico',
+    ]
+  };
+</script>
+
 <script>
 
     var data = {
     labels: [                
 
-            "A","b",
+        "a"
               
 
             ],
     datasets: [{
       label: '# of Votes',
-      data: ["20","50","50","50","50","50"],
+      data: [
+        
+      "100"
+    
+    ],
       backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)'
+        'rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)'
       ],
       borderColor: [
-        'rgba(255,99,132,1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
+        'rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)'
       ],
       borderWidth: 1,
       fill: false
@@ -8832,8 +8944,74 @@
     H
 });
 
+
+
 </script>
 
+    <script type="text/javascript">
+
+        function addAndaime() {
+            var andaime = $("#andaime").val();
+
+            // Verificar se 'andaime' é nulo ou vazio
+            if (!andaime) {
+                alert("O nome do andaime deve ser preenchido!");
+                return; // Impede o envio do POST se 'andaime' for nulo
+            }
+
+            $.ajax({
+                type: "POST",
+                url: "<?php echo base_url('Pagina/add')?>",
+                dataType: "JSON",
+                data: {
+                    quantidade: 1,
+                    andaime: andaime
+                },
+                success: function () {
+                   
+                     // Adicionar a classe "efeito" ao elemento com ID "plus"
+                    $("#plus").removeClass("efeito");
+                    $("#addandaime").removeClass("efeito");
+                    location.reload();
+                }
+            });
+        }
+    
+
+    </script>
+
+    <script>
+        function addAndaime1() {
+        
+                $('#addandaime').toggleClass('efeito');    
+                $('#plus').toggleClass('efeito');         
+        
+        }
+    </script>
+
+
+
+
+
+<script type="text/javascript">
+
+function removerAndaime(nomeandaime) {
+
+	$.ajax({
+            type : "POST",
+            url  : "<?php echo base_url('Pagina/removerAndaime')?>",
+            dataType : "JSON",
+            data : {
+                nomeandaime:nomeandaime
+            },
+            success: function(data){
+                alert(data);
+            }
+        });
+        location.reload();
+    }
+
+</script>
    
     <!-- endinject -->
     <!-- plugin js for this page -->
