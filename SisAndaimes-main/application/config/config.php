@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://192.168.1.200/NewSisAndaimes/SisAndaimes-main/';
+$config['base_url'] = 'http://localhost/NewSisAndaimes/SisAndaimes-main/';
 
 
 /*
@@ -387,10 +387,10 @@ $config['encryption_key'] = '';
 $config['sess_driver'] = 'files';
 $config['sess_cookie_name'] = 'ci_session';
 //$config['sess_samesite'] = 'Lax';
-$config['sess_expiration'] = 7200;
+$config['sess_expiration'] = 604800; // 604800 = 7dias    -- 0 = quando o navegador fechar
 $config['sess_save_path'] = NULL;
 $config['sess_match_ip'] = FALSE;
-$config['sess_time_to_update'] = 300;
+$config['sess_time_to_update'] =  604800; // 604800 = 7dias    -- 0 = quando o navegador fechar
 $config['sess_regenerate_destroy'] = FALSE;
 
 /*

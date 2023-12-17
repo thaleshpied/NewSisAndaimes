@@ -44,9 +44,18 @@ class Pagina extends CI_Controller {
 
 				$dados['andaimes'] = array();
 
-				foreach ($_SESSION['andaimes'] as $andaime => $quantidade) {
-					$dados['andaimes'][] = array('andaime' => $andaime, 'quantidade' => $quantidade);
+				foreach ($_SESSION['andaimes'] as $idAndaime => $data) {
+					$andaime = $data['nome'];
+					$quantidade = $data['quantidade'];
+				
+					$dados['andaimes'][] = array('id' => $idAndaime, 'andaime' => $andaime, 'quantidade' => $quantidade);
 				}
+				
+				// Agora, $dados['andaimes'] contém um array associativo para cada andaime com id, nome e quantidade.
+				
+
+
+				
 
 				$this->load->view('components/head.php', $dados);
 				$this->load->view('components/nav.php', $dados);
@@ -144,7 +153,7 @@ class Pagina extends CI_Controller {
 		redirect('/');
 	}
 
-	/* Adicionando andaime a sessao */
+	/* Adicionando andaime a sessao 
 	public function add()
 	{
 		$andaime = $this->input->post('andaime');
@@ -156,16 +165,60 @@ class Pagina extends CI_Controller {
 		}
 
 		echo json_encode(['message' => 'Andaime adicionado localmente!', 'success' => true]);
+	}*/
+
+
+	public function add()
+	{
+		$andaime = $this->input->post('andaime');
+
+		// Inicializa a sessão se não estiver inicializada
+		if (!isset($_SESSION['andaimes'])) {
+			$_SESSION['andaimes'] = array();
+		}
+
+		// Gera um ID único para o novo andaime
+		$idAndaime = $this->gerarIdUnico();
+
+		// Adiciona o andaime à sessão com o ID
+		$_SESSION['andaimes'][$idAndaime] = array('nome' => $andaime, 'quantidade' => 1);
+
+		echo json_encode(['message' => 'Andaime adicionado localmente!', 'success' => true]);
 	}
+
+	// Função para gerar um ID único
+	private function gerarIdUnico()
+	{
+		// Obtemos os IDs existentes da sessão
+		$idsExistem = array_keys($_SESSION['andaimes']);
+
+		// Inicializa um ID inicial
+		$id = 1;
+
+		// Enquanto o ID gerado já existir, incrementa o ID
+		while (in_array($id, $idsExistem)) {
+			$id++;
+		}
+
+		return $id;
+	}
+
+
+
+
 
 	/* Removendo o andaime da sessão */
-	public function removerCarrinho()
+	public function removerAndaime()
 	{
-		$idProduto = $this->input->post('idProduto');
+		$andaime = $this->input->post('nomeandaime');
 
-		unset($_SESSION['carrinho'][$idProduto]);
+		unset($_SESSION['andaimes'][$andaime]);
 
-		echo json_encode('Produto removido do carrinho!');
+		echo json_encode('Andaime removido!');
 	}
+
+
+
+
 
 }

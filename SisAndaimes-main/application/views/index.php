@@ -182,7 +182,7 @@
                                     <div matripple="" class="mat-ripple mat-button-ripple"></div>
                                     <div class="mat-button-focus-overlay"></div>
                                 </button><!---->                                
-                                <button mat-raised-button="" type="button" mattooltip="Remove" class="btn btn-default" onclick="removerAndaime(<?= $andaime['andaime']; ?>)">
+                                <button mat-raised-button="" type="button" mattooltip="Remove" class="btn btn-default" onclick="removerAndaime(<?= $andaime['id']; ?>)">
                                     <span class="mat-button-wrapper">
                                         <i class="fa fa-times text-danger" aria-hidden="true"></i></span>
                                     <div matripple="" class="mat-ripple mat-button-ripple"></div>
@@ -8996,7 +8996,7 @@
 <script type="text/javascript">
 
 function removerAndaime(nomeandaime) {
-
+        console.log(nomeandaime);
 	$.ajax({
             type : "POST",
             url  : "<?php echo base_url('Pagina/removerAndaime')?>",

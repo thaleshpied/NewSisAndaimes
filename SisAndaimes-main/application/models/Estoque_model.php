@@ -68,6 +68,15 @@ class Estoque_model extends CI_Model
         $this->db->order_by('equipamento');
         return $this->db->get('sis_equipamentos')->result_array();
     }
+
+    
+
+    /*PEGANDO TUDO DA TABELA sis_area*/    
+    function get_all_areasall()
+    {   
+        $this->db->order_by('Area');
+        return $this->db->get('sis_area')->result_array();
+    }
     
     /*PEGANDO DADOS PARA GRÁFICO DE ESTOQUE GERAL EM USO, IMPLANTADO, FÍSICO DA TABELA SIS_EQUIPAMENTOS*/    
     public function saldoemuso() {
@@ -79,6 +88,14 @@ class Estoque_model extends CI_Model
 
         return $query->row(); // Retorna uma única linha como objeto
     }
+
+    /* SALDO IMPLANTADO */
+    function sum_implantado(){
+        return $this->db->select_sum('saldoimplantado');
+    }
+
+
+
 
 
 
