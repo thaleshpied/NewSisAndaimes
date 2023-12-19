@@ -5,8 +5,17 @@ body {
 	background:url(https://www.topandaimes.com/imagens-banner/banner1.jpg) fixed;
 	background-size: cover;
 	font:600 16px/18px 'Open Sans',sans-serif;
-}
 
+}
+ 
+@media all and (display-mode: fullscreen) {
+	body {
+	  margin: 0;
+	  border: 5px solid black;
+	}
+  }
+
+  
 .font-laranja{
 	color: #f4821e !important;
 }
@@ -730,3 +739,4 @@ display: inline-block;
     font-size: 1.1rem;
     vertical-align: middle;
 }
+

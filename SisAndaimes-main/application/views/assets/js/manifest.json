@@ -3,23 +3,58 @@
   "short_name": "SAMF",
   "description": "Gestão de Andaimes",
   "start_url": "http://localhost/NewSisAndaimes/SisAndaimes-main/",
-  "display": "standalone",
+  "display": "fullscreen",
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "application/views/assets/img/logo.png",
-      "sizes": "192x192",
-      "type": "image/png"
+      "src": "icon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
   "screenshots": [
     {
-     "src": "application/views/assets/img/logo.png",
-      "sizes": "640x320",
-      "type": "image/gif",
-      "form_factor": "wide",
-      "label": "Wonder Widgets"
+      "src": "logo.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
-  ]
+  ],
+  "scope": "/NewSisAndaimes/SisAndaimes-main/",
+  "start_url": "http://localhost/NewSisAndaimes/SisAndaimes-main/",
+  "orientation": "portrait",
+  "prefer_related_applications": false,
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.example.app1",
+      "id": "com.example.app1"
+    }, {
+      "platform": "itunes",
+      "url": "https://itunes.apple.com/app/example-app1/id123456789"
+    }, {
+      "platform": "windows",
+      "url": "https://apps.microsoft.com/store/detail/example-app1/id123456789"
+    }
+  ],
+  "permissions": ["gcm"],
+  "serviceworker": {
+    "src": "/NewSisAndaimes/SisAndaimes-main/service-worker.js",
+    "scope": "/NewSisAndaimes/SisAndaimes-main/"
+  },
+  "manifest_version": 2
 }

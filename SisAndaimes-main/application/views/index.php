@@ -68,14 +68,14 @@
                         </div>
                         <div class="card-footer"><hr>
                         <div class="stats">
-                        <div>
-                            <i class="fa fa-plus-square fa-2x disable" id="plus" onclick="addAndaime1()" title="Clique para adicionar Andaime"></i>
-                        </div>  
-                        <div id="addandaime" class="input-with-icon">
-                            <input type="text" id="andaime" name="andaime" placeholder="Nome do Andaime">
-                            <i class="fa fa-plus-square fa-2x disable" id="plus" onclick="addAndaime()" title="Clique para adicionar Andaime"></i>
-                        </div>                   
-                    </div>
+                            <div>
+                                <i class="fa fa-plus-square fa-2x disable" id="plus" onclick="addAndaime1()" title="Clique para adicionar Andaime"></i>
+                            </div>  
+                            <div id="addandaime" class="input-with-icon">
+                                <input type="text" id="andaime" name="andaime" placeholder="Nome do Andaime">
+                                <i class="fa fa-plus-square fa-2x disable" id="plus" onclick="addAndaime()" title="Clique para adicionar Andaime"></i>
+                            </div>                   
+                        </div>
                    
 
                 </div>
@@ -116,8 +116,15 @@
             </div>
         </div>
     </div>
-    <div class="card-footer"><hr>
+    <div class="card-footer"><hr>   
     <div class="stats">
+        <div>
+            <i class="fa fa-plus-square fa-2x disable" id="plus" onclick="addAndaime1()" title="Clique para adicionar Andaime"></i>
+        </div>  
+        <div id="addandaime" class="input-with-icon">
+            <input type="text" id="andaime" name="andaime" placeholder="Nome do Andaime">
+            <i class="fa fa-plus-square fa-2x disable" id="plus" onclick="addAndaime()" title="Clique para adicionar Andaime"></i>
+        </div>   
         <!--<i class="fa fa-bars fa-2x"></i> -->
 </div>
 </div>
@@ -9018,8 +9025,6 @@ function removerAndaime(nomeandaime) {
     <script src="application/vendors/progressbar.js/progressbar.min.js"></script>
     <script src="application/vendors/chart.js/Chart.min.js"></script>
     <!-- End plugin js for this page -->
-    <!-- Custom js for this page-->
-    <script src="application/template/js/dashboard.js"></script>
     <!-- End custom js for this page-->
 
     <!-- ABAIXO GRÁFICOS -->
